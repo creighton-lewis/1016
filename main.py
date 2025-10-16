@@ -4,9 +4,9 @@ import sys
 import re
 #https://raw.githubusercontent.com/trickest/cve/refs/heads/main/2020/CVE-2020-11023.md
 class Get_POC():
-    #def __init__(self):
-    #    pass
-    def get_poc():
+    def __init__(self):
+     pass
+    def get_poc(self, code: str | None = None) -> None:
         cve = code = input ("Enter code:")
         if 'CVE-' in code:
             year = int(code.split('-')[1])
